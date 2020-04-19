@@ -4,7 +4,7 @@
     "version": "1.1.0",
     "private": true,
     "author": "pozil",
-    "bugs": "https://github.com/pozil/quiz-player-app/issues",
+    "bugs": "https://github.com/splahitk/quiz-player-app/issues",
     "dependencies": {
         "dotenv": "^8.2.0",
         "jsforce": "^1.9.3",
@@ -21,7 +21,7 @@
     "engines": {
         "node": ">=10.0.0"
     },
-    "homepage": "https://github.com/pozil/quiz-player-app",
+    "homepage": "https://github.com/splahitk/quiz-player-app",
     "husky": {
         "hooks": {
             "pre-commit": "lint-staged"
@@ -39,7 +39,7 @@
             "eslint"
         ]
     },
-    "repository": "pozil/quiz",
+    "repository": "splahitk/quiz",
     "scripts": {
         "start": "npm run build && node src/server/server.js",
         "build": "lwc-services build -m production",
