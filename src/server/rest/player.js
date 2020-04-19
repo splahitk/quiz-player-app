@@ -37,7 +37,7 @@ module.exports = class PlayerRestResource {
 
         this.sfdc
             .sobject('Quiz_Player__c')
-            .insert({ Name: nickname, Username: username }, (error, result) => {
+            .insert({ Name: nickname }, (error, result) => {
                 if (error || !result.success) {
                     if (
                         error.errorCode &&

@@ -8,6 +8,7 @@ const VALIDATION_DELAY = 500;
 export default class RegistrationForm extends LightningElement {
     isNickNameValid = true;
     nickname = '';
+    //username = '';
     cleanNickname;
     isLoading = false;
     isRegistering = false;
@@ -65,14 +66,14 @@ export default class RegistrationForm extends LightningElement {
         this.isLoading = true;
         this.isRegistering = true;
         const nickname = this.nickname.trim();
-        const username = this.username.trim();
+        //const username = this.username.trim();
         registerPlayer(nickname)
             .then((result) => {
                 this.dispatchEvent(
                     new CustomEvent('registered', {
                         detail: {
                             nickname,
-                            username,
+                            //username,
                             playerId: result.id
                         }
                     })
