@@ -17,6 +17,18 @@
                         <use xlink:href={validationIconHref}></use>
                     </svg>
                 </div>
+                <div class="input-with-icons">
+                    <input
+                        id="username"
+                        maxlength="50"
+                        value={username}
+                        autocomplete="off"
+                    />
+                    <!-- Validation icon -->
+                    <svg class={validationIconClass} aria-hidden="true">
+                        <use xlink:href={validationIconHref}></use>
+                    </svg>
+                </div>
                 <div class="error">{errorMessage}</div>
             </div>
         </div>
